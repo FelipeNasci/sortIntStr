@@ -5,6 +5,13 @@ O programa deve ler de um arquivo de entrada, reconhecer se é string ou número
 
 As informações no arquivo de entrada deverão estar um por linha (seja número ou string).
 
+## Sumário
+
+- [Download do executável](https://github.com/FelipeNasci/sortIntStr/raw/master/dist/Sort_Int_Str.jar)
+- [Metodologia](https://github.com/FelipeNasci/sortIntStr#metodologia)
+- [Implementação](https://github.com/FelipeNasci/sortIntStr#implementa%C3%A7%C3%A3o)
+- [Modo de uso](https://github.com/FelipeNasci/sortIntStr#modo-de-uso)
+
 ## Metodologia
 
 O algoritmo de ordenação implementado foi o MergeSort e a linguagem de programação utilizada foi Java (por sua facilidade no tratamento de Strings e na oferecer um bom suporte a interfaces gráficas na criação do executável).
