@@ -21,7 +21,7 @@ Os dados de entrada são tratados na função sort(), que está contida na class
 
 Após a função receber os dados do arquivo .txt:
 
-	* É verificado se os dados são do tipo String ou Inteiro, através da seguinte tomada de decisão
+* É verificado se os dados são do tipo String ou Inteiro, através da seguinte tomada de decisão
 
 ```java
 
@@ -34,13 +34,13 @@ else
 
 ```
 
-	* A função isStr(data) verifica se o primeiro caractere do arquivo tem identificação entre [97 - 122] da tabela ASCII. O caractere é convertido em letra minúscula para não haver necessidade de verificar em outra faixa
+* A função isStr(data) verifica se o primeiro caractere do arquivo tem identificação entre [97 - 122] da tabela ASCII. O caractere é convertido em letra minúscula para não haver necessidade de verificar em outra faixa
 
-	* Após a verificação do tipo de dado, a variável list recebe um array de inteiros (sejam os caracteres da tabela ASCII ou os valores do arquivo).
+* Após a verificação do tipo de dado, a variável list recebe um array de inteiros (sejam os caracteres da tabela ASCII ou os valores do arquivo).
 
-	* O [MergeSort](https://github.com/FelipeNasci/sortIntStr/blob/master/src/sort/MergeSort.java) necessitou ser generalizado para ordenar os 02 tipos de dados.
+* O [MergeSort](https://github.com/FelipeNasci/sortIntStr/blob/master/src/sort/MergeSort.java) necessitou ser generalizado para ordenar os 02 tipos de dados.
 
-	foi criado um vetor rotulando unicamente cada posição do array a ser ordenado.
+foi criado um vetor rotulando unicamente cada posição do array a ser ordenado.
 
 ``` java
 int[] tag = new int [vetor.length];
@@ -61,28 +61,29 @@ tag   = [    1    |    3    |   0  |   2   ]
 
 * Com o vetor tag[] e o array de entrada original conseguimos ordenar atravé da função recover()
 
-````java
-    private static String[] recover(String[] original, int[] tag) {
+```java
+private static String[] recover(String[] original, int[] tag) {
 
-        String[] novo = new String[original.length];
+    String[] novo = new String[original.length];
 
-        int pos;
+    int pos;
 
-        for (int i = 0; i < original.length; i++) {
-            pos = tag[i];               // valor ordenado da proxima posição
-            novo[i] = original[pos];    //valor ordenado
-        }
-
-        return novo;
-
+    for (int i = 0; i < original.length; i++) {
+        pos = tag[i];               // valor ordenado da proxima posição
+        novo[i] = original[pos];    //valor ordenado
     }
+
+    return novo;
+}
 ```
 
 ## Modo de uso
 
- * Execute o arquivo ![Sort_Int_Str.jar](https://github.com/FelipeNasci/sortIntStr/raw/master/dist/Sort_Int_Str.jar)
+* Execute o arquivo ![Sort_Int_Str.jar](https://github.com/FelipeNasci/sortIntStr/raw/master/dist/Sort_Int_Str.jar)
 
- * Selecione um arquivo .txt contendo os dados a serem ordenados 
+![1](https://github.com/FelipeNasci/sortIntStr/blob/master/img/1.PNG)
+
+* Selecione um arquivo .txt contendo os dados a serem ordenados 
 
 **Podem ser utilizados para como instâncias de Strings**
 
@@ -99,7 +100,7 @@ Gabriel
 Manuela
 Bernardo
 Laura
- ```
+```
 
 **Podem ser utilizados para como instâncias de inteiros**
 
@@ -115,5 +116,9 @@ Laura
 8
 ``` 
 
- * Click no botão Sort
+![2](https://github.com/FelipeNasci/sortIntStr/blob/master/img/2.PNG)
+![3](https://github.com/FelipeNasci/sortIntStr/blob/master/img/3.PNG)
 
+* Click no botão Sort
+
+![4](https://github.com/FelipeNasci/sortIntStr/blob/master/img/4.PNG)
